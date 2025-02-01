@@ -308,7 +308,7 @@ class WishlistScreen extends StatelessWidget {
                               child: CachedNetworkImage(
                                 height: screenHeight*0.2,
                               imageUrl: product.featuredImage,
-                              placeholder: (context, url) => CircularProgressIndicator(),
+                              placeholder: (context, url) => Center(child: CircularProgressIndicator()),
                               errorWidget: (context, url, error) => Icon(Icons.error),
                               fit: BoxFit.cover,
                               width: double.infinity,
